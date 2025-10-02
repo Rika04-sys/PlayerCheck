@@ -272,11 +272,6 @@ namespace PlayerCheckPlugin
                 ushort effectID = config.CheckUIEffectID;
 
                 EffectManager.sendUIEffect(effectID, (short)effectID, target.SteamPlayer().transportConnection, true);
-
-                EffectManager.sendUIEffectText((short)effectID, target.SteamPlayer().transportConnection, true,
-                    "Check_Status", "You are under check");
-                EffectManager.sendUIEffectText((short)effectID, target.SteamPlayer().transportConnection, true,
-                    "Check_Instruction", "Use /contact to communicate with moderator");
             }
             catch (Exception ex)
             {
